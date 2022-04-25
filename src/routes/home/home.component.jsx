@@ -1,4 +1,4 @@
-import Inventory from "../../inventory/inventory.component";
+import Inventory from "../../components/inventory/inventory.component";
 
 
 const Home = () => {
