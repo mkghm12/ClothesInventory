@@ -1,4 +1,4 @@
-import CategoryItem from '../category-item/category-item.component';
+import DirectoryItem from '../category-item/directory-item.component';
 import './inventory.styles.scss';
 
 const Inventory = ({ categories }) => {
@@ -7,7 +7,7 @@ const Inventory = ({ categories }) => {
             {
                 categories.map((category) => {
                     return (
-                        <CategoryItem key={category.id} category={category} />
+                        <DirectoryItem key={category.id} category={category} />
                     );
                 })
             }
