@@ -42,13 +42,14 @@ export const getDocumentsAndDataFromCollection = async (collectionKey) => {
     const q = query(collectionRef);
 
     const querySnapShot = await getDocs(q);
-    const categoryMap = querySnapShot.docs.reduce((accumulatorObject, docSnapShot) => {
-        const { title, items } = docSnapShot.data();
-        accumulatorObject[title.toLowerCase()] = items;
-        return accumulatorObject;
-    }, {});
+    return querySnapShot.docs.map(docSnapshot=> docSnapshot.data());
+    // const categoryMap = querySnapShot.docs.reduce((accumulatorObject, docSnapShot) => {
+    //     const { title, items } = docSnapShot.data();
+    //     accumulatorObject[title.toLowerCase()] = items;
+    //     return accumulatorObject;
+    // }, {});
 
-    return categoryMap;
+    // return categoryMap;
 }
 
 
