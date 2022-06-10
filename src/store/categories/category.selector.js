@@ -18,3 +18,8 @@ export const categoryDataSelector = createSelector(
         }, {});
     }
 );
+
+export const selectCategoryDataIsLoading = createSelector(
+    [selectCategoryReducer],
+    (categoriesSlice) => categoriesSlice.isLoading
+);
