@@ -16,10 +16,10 @@ export const Title = styled(Link)`
   cursor: pointer;
 `;
 export const PreviewContainer = styled.div`
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  /* grid-template-columns: repeat(4, 1fr); */
-  /* column-gap: 20px; */
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
 
   @media screen and (max-width: 800px) {
     display: grid;

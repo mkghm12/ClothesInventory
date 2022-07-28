@@ -8,7 +8,7 @@ export const CheckOutContainer = styled.div`
   align-items: center;
   margin: 50px auto 0;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     width: 90%;
   }
 
@@ -16,36 +16,38 @@ export const CheckOutContainer = styled.div`
     margin-left: auto;
     margin-top: 50px;
   }
-`
+`;
 export const CheckoutHeader = styled.div`
   width: 100%;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
-`
+  text-align: justify;
+  align-items: center;
+`;
 export const HeaderBlock = styled.div`
   text-transform: capitalize;
   width: 23%;
-
+  
   &:last-child {
     width: 8%;
   }
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     width: 22%;
 
     &:last-child {
       width: 12%;
     }
   }
-`
+`;
 
 export const Total = styled.span`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
-`
+`;
 
 export const WarningContainer = styled.div`
   text-align: center;
