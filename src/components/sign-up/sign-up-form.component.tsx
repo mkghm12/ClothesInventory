@@ -2,9 +2,8 @@ import { AuthError, AuthErrorCodes } from "firebase/auth";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { signUpStart } from "../../store/user/user.action";
-import Button from "../button/button.component";
 import FormInput from "../form-input/form-input.component";
-import { Heading1, SignUpContainer } from "./sign-up-form.styles";
+import { CustomButton, Heading1, SignUpContainer } from "./sign-up-form.styles";
 const defaultFormData = {
     displayName: '',
     email: '',
@@ -53,7 +52,7 @@ const SignUpForm = () => {
                 <FormInput label="Email" required type="text" value={email} name="email" onChange={changeHandler} />
                 <FormInput label="Password" required type="password" value={password} name="password" onChange={changeHandler} />
                 <FormInput label="Confirm Password" required type="password" value={confirmPassword} name="confirmPassword" onChange={changeHandler} />
-                <Button type='submit'>SIGN UP</Button>
+                <CustomButton type='submit'>SIGN UP</CustomButton>
             </form>
         </SignUpContainer>
     )
