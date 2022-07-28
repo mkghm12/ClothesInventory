@@ -15,7 +15,7 @@ const DirectoryItem:FC<DirectoryItemPropsType> = ({ category }) => {
     navigate(route);
   }
   return (
-    <DirectoryItemContainer onClick={navigationHandler}>
+    <DirectoryItemContainer size={''} onClick={navigationHandler}>
       <BackgroundImage imageUrl={imageUrl}/>
       <Body>
         <h2>{title}</h2>

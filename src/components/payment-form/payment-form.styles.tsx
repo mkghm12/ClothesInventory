@@ -7,11 +7,17 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+@media screen and (max-width: 800px){
+    width: 90%;
+  }
 `
 
 export const FormContainer = styled.form`
 height: 200px;
 min-width: 800px;
+@media screen and (max-width: 800px){
+    min-width: unset;
+  }
 `
 
 export const PaymentButton = styled(Button)`
